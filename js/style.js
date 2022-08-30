@@ -32,7 +32,6 @@ $(document).ready(function () {
       {
         breakpoint: 992,
         settings: {
-          arrows: false,
           centerMode: true,
           centerPadding: "10px",
           slidesToShow: 2,
@@ -41,7 +40,6 @@ $(document).ready(function () {
       {
         breakpoint: 760,
         settings: {
-          arrows: false,
           centerMode: true,
           centerPadding: "40px",
           slidesToShow: 1,
@@ -53,6 +51,52 @@ $(document).ready(function () {
           slidesToShow: 1,
           slidesToScroll: 1,
           centerPadding: "20px",
+        },
+      },
+    ],
+  });
+});
+
+$(document).ready(function () {
+  $(".items-slider").slick({
+    rtl: true,
+    autoplay: true,
+    centerMode: true,
+    autoplaySpeed: 2700,
+    infinite: true,
+    slidesToShow: 3,
+    centerPadding: "20px",
+    adaptiveHeight: true,
+    prevArrow: $(".slick-prev"),
+    nextArrow: $(".slick-next"),
+    dots: true,
+    customPaging: function (slider, i) {
+      return '<a href="javascript:void(0);" class="dot-item"></a>';
+    },
+    appendDots: $(".dots"),
+    dotsClass: "d-flex container-dots",
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+           centerPadding: "20px",
+        },
+      },
+      {
+        breakpoint: 760,
+        settings: {
+          slidesToShow: 1,
+          centerPadding: "25px",
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          centerMode: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          
         },
       },
     ],
