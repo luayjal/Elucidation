@@ -370,7 +370,9 @@
   height: 257px;
   width: 286px;
 }
-
+.flag{
+  border-radius: 4px;
+}
 .work-team .slick-center .work-team-card img.main-image {
   width: 157px;
   height: 157px;
