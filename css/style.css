@@ -372,7 +372,9 @@
 }
 .flag{
   border-radius: 4px;
-  width: 30px;
+  width: 22px;
+  height: 15px;
+/*   margin-right: auto; */
 }
 .work-team .slick-center .work-team-card img.main-image {
   width: 157px;
